@@ -9,14 +9,9 @@ namespace MedSystemWeb
 {
     public partial class Reg : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-        }
+    } //localhost:44354/Reg.aspx.csystem.Web.UI.Page
+    
 
-        protected void Button3_Click(object sender, EventArgs e)
-        {
 
-        }
     }
-}

@@ -1,57 +1,60 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="MedSystemWeb.Reg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
-&nbsp;&nbsp;
-        <asp:Button ID="Doctor_btm" runat="server" Text="Doctor" />
-        <asp:Button ID="Empleado_btm" runat="server" Text="Empleado" />
-        <asp:Button ID="Paciente_bmt" runat="server" OnClick="Button3_Click" Text="Paciente" />
+        <div class="text-center">
+        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="302px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="439px" />
+        </div>
         <br />
         <br />
-        <table class="nav-justified">
+        <table class="table">
             <tr>
-                <td style="width: 106px">IDdoctor</td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server" BackColor="#66CCFF" Height="30px" Width="180px"></asp:TextBox>
+                <td >&nbsp;</td>
+                <td class="col text-right" style="font-size: large">
+                    <br />
+                    Nombre:</td>
+                <td class="col-md-auto text-left">
+                    <br />
+                    <asp:TextBox ID="TextBox7" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
                 </td>
+            </tr>
+            <tr>
+                <td >&nbsp;</td>
+                <td class="col text-right" style="font-size: large">
+                    <br />
+                    Apellido:</td>
+                <td >
+                    <br />
+                    <asp:TextBox ID="TextBox3" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td >&nbsp;</td>
+                <td class="col text-right" style="font-size: large">
+                    <br />
+                    Nombre de Usuario:</td>
+                <td>
+                    <br />
+                    <asp:TextBox ID="TextBox5" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td >&nbsp;</td>
+                <td class="col text-right" style="font-size: large" >
+                    <br />
+                    Confirmar contraseña:</td>
+                <td>
+                    <br />
+                    <asp:TextBox ID="TextBox6" runat="server" BackColor="White" style="font-size: medium"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td >&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
-        <table class="nav-justified">
-            <tr>
-                <td style="height: 20px; width: 105px">Nombre</td>
-                <td style="height: 20px">
-                    <asp:TextBox ID="TextBox1" runat="server" BackColor="#66CCFF" Height="30px" Width="180px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 27px; width: 105px">Apellido</td>
-                <td style="height: 27px">
-                    <asp:TextBox ID="TextBox2" runat="server" BackColor="#66CCFF" Height="30px" Width="180px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 27px; width: 105px">Especialidad </td>
-                <td style="height: 27px">
-                    <asp:TextBox ID="TextBox3" runat="server" BackColor="#66CCFF" Height="30px" Width="180px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 105px">IDemp</td>
-                <td>
-                    <asp:TextBox ID="TextBox5" runat="server" BackColor="#66CCFF" Height="30px" Width="180px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 105px">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 105px">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 105px">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-    </p>
 </asp:Content>
