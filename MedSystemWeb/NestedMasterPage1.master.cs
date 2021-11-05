@@ -7,19 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace MedSystemWeb
 {
-    public partial class Reg : Shttps://localhost:44354/Reg.aspx.csystem.Web.UI.Page
+    public partial class NestedMasterPage1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Empleado_btm_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
 
         }
