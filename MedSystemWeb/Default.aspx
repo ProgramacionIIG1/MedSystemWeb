@@ -29,6 +29,7 @@
                <td class="col">&nbsp;</td>
                <td class="col text-center">
                    <a runat="server" class="btn btn-primary btn-lg" role="button" href="~/Reg">Registrarse
+
                    </a><br />
                </td>
                <td class="col">&nbsp;</td>

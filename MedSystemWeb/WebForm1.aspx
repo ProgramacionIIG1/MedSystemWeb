@@ -14,6 +14,7 @@
             <td class="col-md-auto text-left" style="width: 479px; height: 86px;">
                 <asp:TextBox ID="TextBox1" runat="server" Width="239px" style="font-size: x-large; color: #0066FF">
 </asp:TextBox>
+
             </td>
             <td class="col" style="height: 86px"></td>
         </tr>
