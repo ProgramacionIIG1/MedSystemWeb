@@ -11,7 +11,7 @@ namespace MedSystemWeb
 {
 
 
-    public partial class Reg
+    public partial class Reg_registro_paciente
     {
 
         /// <summary>
@@ -42,13 +42,13 @@ namespace MedSystemWeb
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
-        /// Control TextBox5.
+        /// Control Calendar1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
         /// Control TextBox6.
@@ -69,12 +69,12 @@ namespace MedSystemWeb
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// Control Button1.
+        /// Control TextBox8.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox8;
     }
 }
