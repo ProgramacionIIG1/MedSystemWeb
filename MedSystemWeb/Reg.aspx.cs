@@ -15,11 +15,18 @@ namespace MedSystemWeb
             if (DropDownList1.Text == "Empleados")
             {
                 MessageBox.Show("Sea registrado como empleado");
+                
             }
             if (DropDownList1.Text == "Pacientes")
             {
                 MessageBox.Show("Sea registrado como paciente");
+                Response.Redirect("Reg-registro-paciente.aspx");
             }
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {  
+
         }
     } //localhost:44354/Reg.aspx.csystem.Web.UI.Page
     

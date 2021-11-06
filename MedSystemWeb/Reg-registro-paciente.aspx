@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reg-registro-paciente.aspx.cs" Inherits="MedSystemWeb.Reg_registro_paciente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="text-center">
-        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="302px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="439px" />
-            x</div>
+        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="396px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="660px" />
+            </div>
     <br />
     <br />
     <table class="table">
@@ -50,8 +50,9 @@
                 <br />
                 <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" style="font-size: large" Width="168px">
                     <asp:ListItem></asp:ListItem>
-                    <asp:ListItem Value="Empleados">Empleados</asp:ListItem>
-                    <asp:ListItem Value="Pacientes">Pacientes </asp:ListItem>
+                    <asp:ListItem>Masculino</asp:ListItem>
+                    <asp:ListItem Value="Femenino">Femenino</asp:ListItem>
+                    <asp:ListItem>Otro</asp:ListItem>
                 </asp:DropDownList>
             </td>
         </tr>
@@ -63,6 +64,12 @@
                 <br />
                 <asp:TextBox ID="TextBox8" runat="server" BackColor="White" style="font-size: medium"></asp:TextBox>
             </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td style="width: 608px" >&nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td>&nbsp;</td>

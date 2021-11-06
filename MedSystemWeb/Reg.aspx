@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="MedSystemWeb.Reg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div class="text-center">
-        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="302px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="439px" />
-            x</div>
+        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="375px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="669px" />
+            </div>
         <br />
         <br />
         <table class="table">
@@ -56,7 +56,7 @@
 
                     <br />
 
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" style="font-size: large" Width="168px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" style="font-size: large" Width="168px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                         <asp:ListItem></asp:ListItem>
                         <asp:ListItem Value="Empleados">Empleados</asp:ListItem>
                         <asp:ListItem Value="Pacientes">Pacientes </asp:ListItem>
@@ -71,7 +71,7 @@
                 </td>
             </tr>
         </table>
-    <div class="container text-center"><asp:Button  Class="btn btn-lg btn-primary" ID="Button1" runat="server" Height="43px" Text="Registrarse" Width="130px" OnClick="Button1_Click" /></div>
+    <div class="container text-center"><asp:Button  Class="btn btn-lg btn-primary" ID="Button1" runat="server" Height="43px" Text="Registrarse" Width="130px" OnClick="Button1_Click" href="~/Reg-registro-paciente" /></div>
 
     
         <br />
