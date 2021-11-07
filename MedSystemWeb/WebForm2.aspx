@@ -1,5 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reg-registro-paciente.aspx.cs" Inherits="MedSystemWeb.Reg_registro_paciente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="MedSystemWeb.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <p>
+        <br />
+    </p>
     <div class="text-center">
         <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="396px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="660px" />
             </div>
@@ -9,7 +12,7 @@
         <tr>
             <td >&nbsp;</td>
             <td class="col text-right" style="font-size: large; width: 608px;">
-                <br />Nombre del paciente :</td>
+                <br />Nombre del empleado :</td>
             <td class="col-md-auto text-left">
                 <br />
                 <asp:TextBox ID="TextBox7" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
@@ -18,7 +21,7 @@
         <tr>
             <td >&nbsp;</td>
             <td class="col text-right" style="font-size: large; width: 608px;">
-                <br />Apellido del paciente :</td>
+                <br />Apellido del empleado :</td>
             <td >
                 <br />
                 <asp:TextBox ID="TextBox3" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
@@ -66,8 +69,20 @@
             </td>
         </tr>
         <tr>
+            <td style="height: 62px"></td>
+            <td class="col text-right" style="font-size: large; height: 62px; width: 608px;" >
+                Telefono<td style="width: 608px; height: 62px;" >
+                <asp:TextBox ID="TextBox9" runat="server" Height="31px" Width="178px"></asp:TextBox>
+            </td>
+            <td style="height: 62px">
+                </td>
+        </tr>
+        <tr>
             <td>&nbsp;</td>
-            <td style="width: 608px" >&nbsp;</td>
+            <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
+                Correo<td style="width: 608px" >
+                <asp:TextBox ID="TextBox10" runat="server" Height="35px" Width="171px"></asp:TextBox>
+            </td>
             <td>
                 &nbsp;</td>
         </tr>
@@ -80,9 +95,25 @@
     </table>
     <div class="container text-center">
         <br />
-        <asp:Button ID="Button1" class="btn btn-primary"  runat="server" Height="50px" OnClick="Button1_Click" Text="Registrar" Width="148px"  />
+        <asp:Button ID="Button1"  class="btn btn-primary" runat="server" Height="57px" Text="Registrar" Width="119px" />
         <br />
         <br />
         <br />
     </div>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
 </asp:Content>
