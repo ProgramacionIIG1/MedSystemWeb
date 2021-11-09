@@ -18,5 +18,15 @@ namespace MedSystemWeb
         {
 
         }
+
+        protected void SqlDataSource3_Selecting()
+        {
+
+        }
+
+        protected void GridView3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
