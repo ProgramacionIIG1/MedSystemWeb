@@ -4,7 +4,7 @@
         <br />
     </p>
     <div class="text-center">
-        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="396px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="660px" />
+        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="401px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="668px" />
             </div>
     <br />
     <br />
