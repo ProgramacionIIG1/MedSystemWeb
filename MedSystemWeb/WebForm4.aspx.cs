@@ -11,25 +11,35 @@ namespace MedSystemWeb
 {
     public partial class WebForm4 : System.Web.UI.Page
     {
+        ArrayList Contenido = new ArrayList();
+        StreamReader Archivo = new StreamReader("C:\\Users\\IP\\Source\\Repos\\MedSystemWeb\\MedSystemWeb\\Ayuda\\Ayuda.txt");
+
         protected void Page_Load(object sender, EventArgs e)
+
         {
-            StreamReader Archivo = new StreamReader("c:\\ayuda.txt");
+            
             string linea = "";
-            ArrayList Contenido = new ArrayList();
+          
+            while (linea != "") ;
+            linea = Archivo.ReadLine();
+            if (linea != null)
+            Contenido.Add(linea);
+            TextBox1.Text = linea;
         }
 
-            while (Linea != null)
+           
+        
+protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-                linea = Archivo.Readline();
-                 if (linea !=null)
-                  contenido.Add(Linea);
-             texto.Text = Linea; 
-         }
-    Archivo.Close();
-               texto.Text = "";
-        foreach (String linea_mostrar in contenido)
-        {
-           texto.Text = texto.Text + linea_mostrar + "String.Chr(13);
+            Archivo.Close();
+            TextBox1.Text = "";
+            foreach (String linea_mostrar in Contenido) 
+
+            {
+                TextBox1.Text = TextBox1.Text + linea_mostrar +"String.Chr(13)";
+            }
         }
     }
-}
+   
+        }
+    
