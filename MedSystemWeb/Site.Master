@@ -14,6 +14,7 @@
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
                         <li><a runat="server" href="~/WebForm3">Usuarios</a></li>
+                        <li><a runat="server" href="~/WebForm4">Ayuda</a></li>
                     </ul>
                 </div>
             </div>
