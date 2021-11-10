@@ -12,7 +12,7 @@ namespace MedSystemWeb
     public partial class WebForm4 : System.Web.UI.Page
     {
         ArrayList Contenido = new ArrayList();
-        StreamReader Archivo = new StreamReader(@"C:\Users\DELL\source\MedSystemWeb\MedSystemWeb\Ayuda\Ayuda.txt");
+        StreamReader Archivo = new StreamReader(@"C:\Users\IP\Source\Repos\MedSystemWeb\MedSystemWeb\Ayuda\Ayuda.txt");
 
         protected void Page_Load(object sender, EventArgs e)
 

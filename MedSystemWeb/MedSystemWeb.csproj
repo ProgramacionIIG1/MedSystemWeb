@@ -127,12 +127,14 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Recursos\logo de la empresa.jpeg" />
     <Content Include="Recursos\logo_transparent_background.png" />
     <Content Include="Recursos\logo_white_background.jpg" />
     <Content Include="Recursos\white_logo_dark_background.jpg" />
     <Content Include="Recursos\white_logo_transparent_background.png" />
     <Content Include="Reg-registro-paciente.aspx" />
     <Content Include="Reg.aspx" />
+    <Content Include="RegEmpleados.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
@@ -191,6 +193,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegEmpleados.aspx.cs">
+      <DependentUpon>RegEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegEmpleados.aspx.designer.cs">
+      <DependentUpon>RegEmpleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm4.aspx.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
