@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Recursos\logo de la empresa.jpeg" />
     <Content Include="Recursos\logo_transparent_background.png" />
     <Content Include="Recursos\logo_white_background.jpg" />
     <Content Include="Recursos\white_logo_dark_background.jpg" />
