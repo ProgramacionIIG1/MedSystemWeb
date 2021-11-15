@@ -10,26 +10,6 @@
                 <td >&nbsp;</td>
                 <td class="col text-right" style="font-size: large; width: 607px;">
                     <br />
-                    Nombre:</td>
-                <td class="col-md-auto text-left">
-                    <br />
-                    <asp:TextBox ID="TextBox7" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td >&nbsp;</td>
-                <td class="col text-right" style="font-size: large; width: 607px;">
-                    <br />
-                    Apellido:</td>
-                <td >
-                    <br />
-                    <asp:TextBox ID="TextBox3" runat="server" BackColor="White" style="font-size: medium" ></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td >&nbsp;</td>
-                <td class="col text-right" style="font-size: large; width: 607px;">
-                    <br />
                     Nombre de Usuario:</td>
                 <td>
                     <br />
