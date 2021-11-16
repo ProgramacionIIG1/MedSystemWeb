@@ -142,6 +142,7 @@
       <Link>.editorconfig</Link>
     </Content>
     <Content Include="WebForm4.aspx" />
+    <Content Include="HomeEmp.master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -193,6 +194,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmp.master.cs">
+      <DependentUpon>HomeEmp.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeEmp.master.designer.cs">
+      <DependentUpon>HomeEmp.master</DependentUpon>
     </Compile>
     <Compile Include="ID.cs" />
     <Compile Include="RegEmpleados.aspx.cs">
