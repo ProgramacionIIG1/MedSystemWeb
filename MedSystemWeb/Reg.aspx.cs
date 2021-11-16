@@ -45,11 +45,12 @@ namespace MedSystemWeb
                     con.Parameters.AddWithValue("@idUsuario", id);
                     con.Parameters.AddWithValue("@NombreUsuario", TextBox5.Text);
                     con.Parameters.AddWithValue("@Contraseña", TextBox6.Text);
-
+                    Session["Id"] = id;
                     try 
                     {
                         con.ExecuteNonQuery();
-                        MessageBox.Show("Usuario registrado con exito \n" + "Su Id de Usuario:" + id+ "\n" + "Por favor copie el Id ya se requerira \n" + " mas adelante en el proceso de registro");
+                        Response.Redirect("RegEmpleados.aspx");
+
                     }
                     
                     catch(SqlException  k)
@@ -79,12 +80,13 @@ namespace MedSystemWeb
                     con.Parameters.AddWithValue("@idUsuario", id);
                     con.Parameters.AddWithValue("@NombreUsuario", TextBox5.Text);
                     con.Parameters.AddWithValue("@Contraseña", TextBox6.Text);
-
+                    Session["Id"] = id;
                     try
                     {
                         con.ExecuteNonQuery();
-                        MessageBox.Show("Usuario registrado con exito \n" + "Su Id de Usuario:" + id + "\n" + "Por favor copie el Id ya se requerira \n" + " mas adelante en el proceso de registro");
+                        MessageBox.Show("Usuario registrado con exito \n" + "Su Id de Usuario:" + Convert.ToString(Session["Id"]) + "\n" + "Por favor copie el Id ya se requerira \n" + " mas adelante en el proceso de registro");
                         Response.Redirect("Reg-registro-paciente.aspx");
+     
                     }
 
                     catch (SqlException k)

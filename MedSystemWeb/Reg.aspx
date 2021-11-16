@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="MedSystemWeb.Reg" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div class="text-center">
-        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="375px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="669px" />
+        <asp:Image ImageAlign="Middle" ID="Image1" runat="server" Height="339px" ImageUrl="~/Recursos/logo_transparent_background.png" Width="658px" />
             </div>
         <br />
         <br />

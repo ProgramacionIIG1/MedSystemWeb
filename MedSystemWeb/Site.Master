@@ -1,42 +1,57 @@
-﻿
+﻿ 
 <!DOCTYPE html>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                    </button>
-                    &nbsp;<a class="navbar-brand" runat="server" href="~/">MedSystem</a></div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
-                        <li><a runat="server" href="~/WebForm3">Usuarios</a></li>
-                        <li><a runat="server" href="~/WebForm4">Ayuda</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+<link href="Content/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet" />
 <html lang="es">
 <head runat="server"> 
 <meta http-equiv="Content-Typ"e" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
-    <meta name=viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - MedSystem</title>
-
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+
 </head>
-<body>
+<body class ="fixed-top">
     <form runat="server">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">MedSystem</a>
+  </div>
+
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+ <li><a class="active" runat="server" href="~/">Inicio</a></li>
+
+                       <li><a runat="server" href="~/Contact">Contactanos</a></li>
+        
+                       <%-- <li><a runat="server" href="~/WebForm3">Usuarios</a></li>--%>
+                    
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+           <li><a runat="server" href="~/About">Acerca de</a></li>
+          <li><a runat="server" href="~/WebForm4">Ayuda</a></li>
+                    <li><a runat="server" href="~/WebForm4"> </a></li>
+      </ul>
+  </div>
+</nav>
+
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -64,7 +79,9 @@
                 
             </asp:ContentPlaceHolder>
             <hr />
+            <h1> </h1>
             <footer>
+                
                 <p>&copy; <%: DateTime.Now.Year %> - MedSystem</p>
             </footer>
         </div>

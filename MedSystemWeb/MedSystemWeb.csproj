@@ -108,14 +108,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AggExpedientes.aspx" />
+    <Content Include="AggPas.aspx" />
     <Content Include="Ayuda\Ayuda.txt" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Expediente.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -127,6 +131,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="HomeEmpl.aspx" />
+    <Content Include="HomePacientes.aspx" />
+    <Content Include="HomePas.aspx" />
+    <Content Include="Perfil.aspx" />
+    <Content Include="Recursos\arrow-bar-right %281%29.svg" />
+    <Content Include="Recursos\descarga %282%29.png" />
     <Content Include="Recursos\logo de la empresa.jpeg" />
     <Content Include="Recursos\logo_transparent_background.png" />
     <Content Include="Recursos\logo_white_background.jpg" />
@@ -134,7 +144,10 @@
     <Content Include="Recursos\white_logo_transparent_background.png" />
     <Content Include="Reg-registro-paciente.aspx" />
     <Content Include="Reg.aspx" />
+    <Content Include="RegAdmin.aspx" />
+    <Content Include="RegDoc.aspx" />
     <Content Include="RegEmpleados.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
@@ -142,6 +155,11 @@
       <Link>.editorconfig</Link>
     </Content>
     <Content Include="WebForm4.aspx" />
+    <Content Include="HomeEmp.master" />
+    <Content Include="WebForm5.aspx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="WebForm7.aspx" />
+    <Content Include="Recursos\59070200-icono-de-usuario-hombre-perfil-hombre-de-negocios-avatar-icono-persona-en-la-ilustración-vectorial.webp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -178,6 +196,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AggExpedientes.aspx.cs">
+      <DependentUpon>AggExpedientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AggExpedientes.aspx.designer.cs">
+      <DependentUpon>AggExpedientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AggPas.aspx.cs">
+      <DependentUpon>AggPas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AggPas.aspx.designer.cs">
+      <DependentUpon>AggPas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -194,7 +226,63 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Expediente.aspx.cs">
+      <DependentUpon>Expediente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Expediente.aspx.designer.cs">
+      <DependentUpon>Expediente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmp.master.cs">
+      <DependentUpon>HomeEmp.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeEmp.master.designer.cs">
+      <DependentUpon>HomeEmp.master</DependentUpon>
+    </Compile>
+    <Compile Include="HomeEmpl.aspx.cs">
+      <DependentUpon>HomeEmpl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeEmpl.aspx.designer.cs">
+      <DependentUpon>HomeEmpl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePacientes.aspx.cs">
+      <DependentUpon>HomePacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePacientes.aspx.designer.cs">
+      <DependentUpon>HomePacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePas.aspx.cs">
+      <DependentUpon>HomePas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePas.aspx.designer.cs">
+      <DependentUpon>HomePas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ID.cs" />
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegAdmin.aspx.cs">
+      <DependentUpon>RegAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegAdmin.aspx.designer.cs">
+      <DependentUpon>RegAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegDoc.aspx.cs">
+      <DependentUpon>RegDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegDoc.aspx.designer.cs">
+      <DependentUpon>RegDoc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegEmpleados.aspx.cs">
       <DependentUpon>RegEmpleados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -208,6 +296,27 @@
     </Compile>
     <Compile Include="WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
     </Compile>
     <Compile Include="_Default.cs">
       <DependentUpon>Default.aspx</DependentUpon>

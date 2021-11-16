@@ -10,7 +10,7 @@
     <p>MedSystem es un sistema hecho para agilizar el proceso de diagnostico de los pacientes ya sea de clinicas privadas o hospitales. MedSysteam hace uso de una base de datos lo cual le permite guardar los datos de los pacientes de manera rapida haci tambien dando acceso a dichos datos desde cualquier parte de el pais haciendo uso de su celular mediante la web o de nuestra aplicacion de escritorio con este sistema se pretende reducir los tiempos de espera asi tambien la perdida de datos de pacientes </p>
     <p>&nbsp;</p>
    
-    <p style="font-size: x-large"><strong>Asi que esperas inicia sesion o registrate gratis y disfruta de todos los beficios de nuestro sistema!</strong></p>
+    <p style="font-size: x-large"><strong>Asi que esperas inicia sesion o registrate gratis y disfruta de todos los beneficios de nuestro sistema!</strong></p>
     <p style="font-size: x-large">&nbsp;</p>
 
 

@@ -30,7 +30,8 @@
                 <br />Fecha de nacimiento:</td>
             <td>
                 <br />
-                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                &nbsp;&nbsp;
+                <asp:TextBox ID="TextBox9" runat="server" BackColor="White" style="font-size: medium" TextMode="Date" ></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -43,12 +44,21 @@
             </td>
         </tr>
         <tr>
+            <td style="height: 58px" >&nbsp;</td>
+            <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
+                <br />Telefono</td>
+            <td style="height: 58px">
+                <br />
+                <asp:TextBox ID="TextBox11" runat="server" BackColor="White" style="font-size: medium"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
             <td >&nbsp;</td>
             <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
                 <br />Sexo</td>
             <td>
                 <br />
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" style="font-size: large" Width="168px">
+                <asp:DropDownList ID="DropDownList2" runat="server" Height="25px" style="font-size: large" Width="168px">
                     <asp:ListItem></asp:ListItem>
                     <asp:ListItem>Masculino</asp:ListItem>
                     <asp:ListItem Value="Femenino">Femenino</asp:ListItem>
@@ -58,18 +68,26 @@
         </tr>
         <tr>
             <td style="height: 58px"></td>
-             <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
-                <br />Dirrecion</td>
-            <td style="height: 58px">
+            <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
+                <br />Estado</td>
+            <td>
                 <br />
-                <asp:TextBox ID="TextBox8" runat="server" BackColor="White" style="font-size: medium"></asp:TextBox>
+                <asp:DropDownList ID="DropDownList3" runat="server" Height="25px" style="font-size: large" Width="168px">
+                    <asp:ListItem></asp:ListItem>
+                    <asp:ListItem>Muerto</asp:ListItem>
+                    <asp:ListItem Value="Femenino">Vivo</asp:ListItem>
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td style="width: 608px" >&nbsp;</td>
-            <td>
-                &nbsp;</td>
+            <td class="col text-right" style="font-size: large; height: 58px; width: 608px;" >
+                <br />
+                Direccion</td>
+            <td style="height: 58px">
+                <br />
+                <asp:TextBox ID="TextBox10" runat="server" BackColor="White" style="font-size: medium" Width="281px"></asp:TextBox>
+            </td>
         </tr>
         <tr>
             <td>&nbsp;</td>

@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomeEmp.master.cs" Inherits="MedSystemWeb.HomeEmp" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+           <div class="lg-dark"> </div>
+
+            <asp:ContentPlaceHolder ID="MainContent1" runat="server">
+                
+               
+                
+            </asp:ContentPlaceHolder>
+ 
+   
+</asp:Content>
