@@ -19,16 +19,17 @@ namespace MedSystemWeb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-75G4N27J;Initial Catalog=MedSystem;Integrated Security=True");
-            SqlCommand cadena = new SqlCommand("Select count(*) from usuario where idUsuario=@usuario", conexion);
+            SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-NV76SQV;Initial Catalog=MedSystem;Integrated Security=True");
+            SqlCommand cadena = new SqlCommand("Select count(*) from usuarios where IdUsuario=@usuario", conexion);
             conexion.Open();
-            int id;
-            id = GeID.genid();
+          
 
            
 
             if (DropDownList1.Text == "Empleados")
             {
+                int id;
+                id = GeID.genid();
                 cadena.Parameters.AddWithValue("@usuario", id);
                 int i = Convert.ToInt32(cadena.ExecuteScalar());
                 if (i > 0)
@@ -40,7 +41,7 @@ namespace MedSystemWeb
 
                 else 
                 {
-                    SqlCommand con = new SqlCommand("Insert into usuario (idUsuario, NombreUsuario, Contraseña ) Values (@idUsuario, @NombreUsuario, @Contraseña) ", conexion);
+                    SqlCommand con = new SqlCommand("Insert into usuarios (IdUsuario, NombreUsuario, Contraseña ) Values (@idUsuario, @NombreUsuario, @Contraseña) ", conexion);
                     con.Parameters.AddWithValue("@idUsuario", id);
                     con.Parameters.AddWithValue("@NombreUsuario", TextBox5.Text);
                     con.Parameters.AddWithValue("@Contraseña", TextBox6.Text);
@@ -48,24 +49,51 @@ namespace MedSystemWeb
                     try 
                     {
                         con.ExecuteNonQuery();
-                        MessageBox.Show("Usuario registrado con exito");
+                        MessageBox.Show("Usuario registrado con exito \n" + "Su Id de Usuario:" + id+ "\n" + "Por favor copie el Id ya se requerira \n" + " mas adelante en el proceso de registro");
                     }
                     
-                    catch
+                    catch(SqlException  k)
                     {
-
+                        MessageBox.Show(k.ToString());
                     }
 
                  }
-
-
-                MessageBox.Show("Sea registrado como empleado");
                 
             }
             if (DropDownList1.Text == "Pacientes")
             {
-                MessageBox.Show("Sea registrado como paciente");
-                Response.Redirect("Reg-registro-paciente.aspx");
+                int id;
+                id = GeID.genid();  
+                cadena.Parameters.AddWithValue("@usuario", id);
+                int i = Convert.ToInt32(cadena.ExecuteScalar());
+                if (i > 0)
+
+                {
+                    MessageBox.Show("El usuario ya esta registrado");
+
+                }
+
+                else
+                {
+                    SqlCommand con = new SqlCommand("Insert into usuarios (IdUsuario, NombreUsuario, Contraseña ) Values (@idUsuario, @NombreUsuario, @Contraseña) ", conexion);
+                    con.Parameters.AddWithValue("@idUsuario", id);
+                    con.Parameters.AddWithValue("@NombreUsuario", TextBox5.Text);
+                    con.Parameters.AddWithValue("@Contraseña", TextBox6.Text);
+
+                    try
+                    {
+                        con.ExecuteNonQuery();
+                        MessageBox.Show("Usuario registrado con exito \n" + "Su Id de Usuario:" + id + "\n" + "Por favor copie el Id ya se requerira \n" + " mas adelante en el proceso de registro");
+                        Response.Redirect("Reg-registro-paciente.aspx");
+                    }
+
+                    catch (SqlException k)
+                    {
+                        MessageBox.Show(k.ToString());
+                    }
+
+                }
+               
             }
         }
 
